@@ -95,7 +95,11 @@ public class SimpleController {
 				DateFormatUtil.getFormatDate(httpSession.getCreationTime()));
 		resultBody.put("isNew", httpSession.isNew());
 		resultBody.put("HttpSessionId", httpSession.getId());
-
+        /*  try {
+			Thread.sleep(15000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}*/
 		return resultBody;
 	}
 
